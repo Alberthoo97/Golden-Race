@@ -1,0 +1,51 @@
+.background {
+    background-color: grey;
+}
+
+h2 {
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+@media (min-width: 900px) {
+    
+    .flex {
+        display: flex;
+    }
+    
+    .container {
+        justify-content: space-around;;
+    }
+    
+    .w50 {
+        width: 49%;
+    }
+    
+    .w100 {
+        width: 100%;
+    }
+    
+    .spaceBetween {
+        justify-content: space-between;
+    }
+    
+    .pdBottom80 {
+        padding-bottom: 80px;
+    }
+    
+    .pdBottom250 {
+        padding-bottom: 250px;
+    }
+    
+    .pdBottom60 {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pdBottom30 {
+        padding-bottom: 30px;
+    }
+}
+

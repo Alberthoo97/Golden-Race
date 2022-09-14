@@ -1,0 +1,19 @@
+<h1>Exercise 1</h1>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div>
+        <label for="name">Product name: </label>
+        <input id="name" type="text" formControlName="name" #name>
+        <div class="error" *ngIf="!validations(name.id)">The product name must be longer than 5 characters and smaller than 20</div>
+    </div>
+    
+    
+    <div id="divPrice">
+        <label>Price: </label>
+        <input id="price" type="number" formControlName="price" #price min="5" max="20" >
+        <div class="error" *ngIf="!validations(price.id)">The price must be a number greater than 5 and less than 20</div>
+    </div>
+    
+    <button type='submit' id="btnSubmit">Submit</button>
+    <button type='button' (click)="initForm()" id="btnReset">Reset</button>
+</form>
